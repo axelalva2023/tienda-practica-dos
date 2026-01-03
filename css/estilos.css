@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    height: calc(100vh - 84.06px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: black;
+     
+}
+header h3{
+    color: aliceblue;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li{
+    margin: 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+.nosotros{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.servicios{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 20px;
+}
+
+.servicios .contenedor-imagen{
+    position: relative;
+    width: 500px; /* ?? Axel Igual que el otro div */
+    max-width: 500px; /* Límite opcional en desktop */
+     /* Centrado */
+}
+.servicios .contenedor-imagen .texto-sobre-imagen{
+    position: absolute;
+    bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 14px;
+      text-align: center;
+}
+
+.nosotros .contenedor-imagen{
+    position: relative;
+    width: 500px; /* ?? Axel Igual que el otro div */
+    max-width: 500px; /* Límite opcional en desktop */
+     /* Centrado */
+}
+.nosotros .contenedor-imagen .texto-sobre-imagen{
+    position: absolute;
+    bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 14px;
+      text-align: center;
+}
+
+.nosotros div{
+    width: 50%;
+}
+
+.servicios div{
+    width: 50%;
+}
+
+.nosotros img{
+    width: 100%; /* ??Axel Para que se ajuste al ancho del contenedor */
+    height: auto;
+    display: block;
+
+}
+
+.servicios img{
+    width: 100%; /* ??Axel Para que se ajuste al ancho del contenedor */
+    height: auto;
+    display: block;
+}
+
+/* Estilos para la seccion de productos */
+
+.productos .contenedor-productos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+ flex-wrap: wrap;
+}
+
+.productos .contenedor-productos div img{
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.productos .contenedor-productos div{
+    border: 2px solid red;
+    width: 320px;
+    height: 300px;
+    text-align: center;
+    
+}
+
+.productos .contenedor-productos div a{
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    color: aliceblue;
+    
+}
+
+.productos .contenedor-productos div p{
+    margin-bottom: 12px;
+    
+}
+
+.productos h2{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.productos{
+    background-color: #93DA97;
+}
+
+footer p{
+    text-align: center;
+}
+
+/* ===== CARRITO ===== */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Título */
+.carrito-titulo{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Sección */
+.carrito-seccion{
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor cards */
+.carrito-contenedor{
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Card producto */
+.carrito-contenedor .carrito-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Imagen */
+.carrito-item img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Nombre */
+.carrito-item h3{
+    flex: 1;
+    margin: 0;
+}
+
+/* Precio */
+.carrito-item p{
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* Botón eliminar */
+.carrito-item button{
+    background-color: crimson;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrito-item button:hover{
+    background-color: darkred;
+}
+
+/* Total */
+.carrito-total{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+/* Vaciar */
+.carrito-btn-vaciar{
+    display: block;
+    margin: 0 auto 20px auto;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.carrito-btn-vaciar:hover{
+    background-color: #333;
+}
+
+/* Volver */
+.carrito-volver{
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: black;
+    color: #f4f4f4;
+    padding: 30px;
+}
+footer ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer ul li{
+    margin: 10px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+footer div h3{
+    text-align: center;
+}
+
+.contacto{
+    background-color: #93DA97;
+}
+
+.contacto .contenedor-mapa iframe{
+    width: 100%
+}
+.contacto h3{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+}
+.contacto .contenedor-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+form{
+    background-color: #E8FFD7;
+    padding: 20px;
+    border: red 2px solid;
+    height: 400px;
+}
+
+form input{
+    width: 100%;
+    margin-bottom: 5px;
+}
+form textarea{
+    width: 100%;
+    margin-bottom: 5px;
+}
+form .button-container{
+    text-align: center;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.nosotros,
+.servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    overflow-x: hidden;
+}
+
+.nosotros > div,
+.servicios > div {
+    width: 100%;
+    min-width: 0;
+}
+
+.contenedor-imagen {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.texto-sobre-imagen {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    padding: .4rem .6rem;
+    font-size: .8rem;
+    border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+    .nosotros,
+    .servicios {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nosotros > div,
+    .servicios > div {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .servicios {
+        flex-direction: row-reverse;
+    }
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-btn {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* LINKS */
+.nav-links {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #111;
+    display: none;
+    flex-direction: column;
+}
+
+.nav-links li {
+    border-top: 1px solid #333;
+}
+
+.nav-links a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background: #222;
+}
+
+@media (min-width: 768px) {
+
+    .menu-btn {
+        display: none;
+    }
+
+    .nav-links {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        width: auto;
+        background: none;
+    }
+
+    .nav-links li {
+        border: none;
+    }
+
+    .nav-links a {
+        padding: 0;
+    }
+}

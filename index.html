@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <title>Mi tienda</title>
+</head>
+
+<body>
+
+    <header>
+        <h3>Bogui</h3>
+        <nav>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Contacto</a></li>
+                <li>
+                    <h3 id="contador"></h3>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="contenedorFondo">
+            <h1 id="titulo"></h1>
+        </section>
+        <section class="nosotros">
+            <div>
+                <h3>Titulo terciario</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officiis voluptatum aut hic
+                    explicabo, reiciendis sapiente nisi, est eos porro, cupiditate magnam? Praesentium quas, rerum
+                    similique porro fuga saepe fugit?</p>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="./img/comida.jpg" alt="foto-seccion-nosotros">
+                <p class="texto-sobre-imagen">Comida lista. Creditos: Axel Alva</p>
+            </div>
+        </section>
+        <section class="servicios">
+            <div>
+                <h3>Titulo terciario</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officiis voluptatum aut hic
+                    explicabo, reiciendis sapiente nisi, est eos porro, cupiditate magnam? Praesentium quas, rerum
+                    similique porro fuga saepe fugit?</p>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="./img/comida.jpg" alt="foto-seccion-servicios">
+                <p class="texto-sobre-imagen">Comida lista. Creditos: Axel Alva</p>
+            </div>
+        </section>
+        <section class="productos">
+            <h2>Productos</h2>
+            <div class="contenedor-productos" id="contenedor">
+
+            </div>
+            <a href="./pages/carrito.html">Ver carrito</a>
+            <hr>
+            <h3>Agregar producto</h3>
+            <p>Ingrese el nombre del producto</p><input type="text" id="campoNombre">
+            <p>Ingrese la imagen del producto</p><input type="text" id="campoImagen">
+            <p>Ingrese el precio del producto</p><input type="text" id="campoPrecio">
+            <button id="boton">Agregar</button>
+            <h3>Buscar producto</h3>
+            <p>Ingrese el nombre del producto</p><input type="text" id="campoBuscar">
+            <button id="botonBuscar">Buscar</button>
+        </section>
+        <section class="contacto">
+            <h3>Contacto:</h3>
+            <div class="contenedor-contacto">
+                <div class="contenedor-mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.1619353151304!2d-58.41895592477026!3d-34.625347858640005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbdd9ded8891%3A0xe3fc1307e41d3df0!2sSan%20Juan%20y%20Boedo!5e0!3m2!1ses!2sar!4v1751403426610!5m2!1ses!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <form>
+                    <div>
+                        <label for="nombre">Nombre:
+                            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">Email:
+                            <input class="input-email" type="email" id="email" placeholder="Ingrese su email" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:
+                            <textarea name="" id="mensaje" cols="30" rows="5" placeholder="Escriba un mensaje"
+                                required></textarea>
+                        </label>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <h3>Bogui</h3>
+            <p>Todos los derechos reservados &copy; 2026</p>
+        </div>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Productos</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </footer>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
